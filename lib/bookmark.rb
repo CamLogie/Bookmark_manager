@@ -1,8 +1,14 @@
+require 'pg'
+
 class Bookmark
   attr_reader :name, :url
 
   def self.bookmarks
-    load './db/list_bookmarks.rb'
+    con = PG.connect( dbname: 'bookmark_manager')
+    rs = con.exec('SELECT * FROM bookmarks')
+    rs.map do |row|
+      row['url']
+    end
   end
 
   def initialize(name, url)
