@@ -6,8 +6,10 @@ begin
 
   rs = con.exec "SELECT * FROM bookmarks"
 
+  $urls = []
+
   rs.each do |row|
-    puts "%s %s" % [ row['id'], row['url'] ]
+    $urls << ("%s" % [ row['url'] ])
   end
 
 rescue PG::Error => e 
