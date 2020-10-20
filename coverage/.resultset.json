@@ -1,41 +1,40 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/arabellaknowles/Projects/Bookmark_manager/spec/features/index_spec.rb": {
+      "/Users/cameronlogie/codingprojects/makers/week_4/bookmark_manager/spec/features/index_spec.rb": {
         "lines": [
           1,
           1,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/arabellaknowles/Projects/Bookmark_manager/spec/features/view_bookmarks_spec.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          1,
+          0,
           0,
           null,
           null
         ]
       },
-      "/Users/arabellaknowles/Projects/Bookmark_manager/spec/unit/bookmark_spec.rb": {
+      "/Users/cameronlogie/codingprojects/makers/week_4/bookmark_manager/spec/features/view_bookmarks_spec.rb": {
+        "lines": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          null,
+          null
+        ]
+      },
+      "/Users/cameronlogie/codingprojects/makers/week_4/bookmark_manager/spec/unit/bookmark_spec.rb": {
         "lines": [
           1,
           null,
           1,
           1,
-          1,
-          1,
+          0,
+          0,
           null,
           null
         ]
       }
     },
-    "timestamp": 1603207081
+    "timestamp": 1603209280
   }
 }

@@ -24,7 +24,8 @@ Capybara.app = BookmarkManager
 
 require 'simplecov'
 require 'simplecov-console'
-require 'setup_test_database'
+require_relative '../db/setup_test_database.rb'
+require_relative 'web_helpers'
 
 
 SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new([
