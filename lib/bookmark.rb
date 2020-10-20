@@ -1,10 +1,8 @@
-require './db/list_bookmarks.rb'
-
 class Bookmark
   attr_reader :name, :url
 
   def self.bookmarks
-    $urls
+    load './db/list_bookmarks.rb'
   end
 
   def initialize(name, url)

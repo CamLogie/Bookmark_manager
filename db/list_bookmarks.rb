@@ -5,12 +5,14 @@ begin
   con = PG.connect( dbname: 'bookmark_manager')
 
   rs = con.exec "SELECT * FROM bookmarks"
-
-  $urls = []
-
+  
+  @urls = []
+  
   rs.each do |row|
-    $urls << ("%s" % [ row['url'] ])
+    @urls << ("%s" % [ row['url'] ])
   end
+
+  @urls
 
 rescue PG::Error => e 
 
