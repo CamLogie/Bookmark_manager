@@ -5,7 +5,7 @@ class Bookmark
 
   def self.bookmarks
     if ENV['ENVIRONMENT'] ='test'
-      con = PG.connect( dbname: 'boomark_manager_test')
+      con = PG.connect( dbname: 'test_bookmark_manager')
     else
       con = PG.connect( dbname: 'bookmark_manager')
     end
